@@ -1,0 +1,22 @@
+.menu-item-2248{
+    background-color:aqua;
+}
+.content{
+    margin-left: 220px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.glyphicon{
+    margin-bottom: 50px;
+    background-color: rgb(197, 13, 13);
+}
+.carousel-caption h4,p{
+    color: red;
+}
+.main-wrapper p{
+    font-size: auto;
+}
+.cd-headline{
+    margin-top: 20px;
+
+}
