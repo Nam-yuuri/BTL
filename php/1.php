@@ -15,29 +15,34 @@
 
 <body>
   <style>
-     @media (max-width:999px){
+     @media (max-width:902px){
        .col-lg-2{
          height:0px;
        }
      }
   </style>
-  <div class="container-fluid" style="background:url(../image/background-home.jpg) no-repeat center  center; background-size:cover;height:100vh">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2">
-        <?php include("header.php");?>
+        <?php include("right.php");?>
       </div>
       </div>
-      <div class="col-lg-10" >
-        <div class="col-lg-12" style="padding-right:60px" >
-          <section style="height:30%">
-          <div class="main-wrapper" style="text-align: center;font-size:170%">
+      <div class="col-lg-10">
+        <section>
+        <div class="bark container-fluid"
+          style="background:url(../image/web.jpg) no-repeat center  center;background-size:cover;width:100%;height;100% ">
+          <div class="main-wrapper" style="text-align: center;font-size:200%">
             <p class="cd-headline clip is-full-width">
               <span>language learned</span> <span class="typer" data-colors="#1ed373" id="main"
                 data-words="C++,C#,PYTHON,SQL,PHP" data-delay="100" data-deletedelay="1000"
                 style="color: rgb(30, 211, 115);">
               </span>
             </p>
-            <div class="carousel slide" id="carousel-176652">
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-12" >
+                <div class="carousel slide" id="carousel-176652">
                   <ol class="carousel-indicators">
                     <li data-slide-to="0" data-target="#carousel-176652" class="active">
                     </li>
@@ -68,37 +73,21 @@
                     </div>
                     <a class="carousel-control-prev" style="width: 100px;" href="#carousel-176652"
                     data-slide="prev"><span class="carousel-control-prev-icon"></span> <span
-                      class="sr-only">Previous</span></a> 
-                    <a class="carousel-control-next" style="width: 100px;" href="#carousel-176652"
+                      class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-176652"
                     data-slide="next"><span class="carousel-control-next-icon"></span> <span
                       class="sr-only">Next</span></a>
                   </div>
                 </div>
-
-          </div>
-          </section>
-        </div>
-        <div class="col-lg-12">
-        <div class="container-fluid" >
-              <div class="home">
-                <div class="row" >
-                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
-                    class="glyphicon glyphicon-log-in"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
-                    <h3>Hoàng Võ Hoài Nam</h3>
-                    <a href="homenam.php"><button type="button"  class="btn btn-outline-info">Tìm Hiểu</button></a>
-                  </div>
-                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
-                    class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
-                    <h3>Đào Nhật Minh</h3>
-                    <a href="homeminh.php"><button type="button"  class="btn btn-outline-info">Tìm Hiểu</button></a>
-                  </div>                    
-                </div>
               </div>
             </div>
-
+          </div>
         </div>
+
+        </section>
       </div>
-      <?php include("footer.php");?>
+      <?php include("left.php");?>
+
+
     </div>
   </div>
   <!-- Optional JavaScript -->

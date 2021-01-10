@@ -16,7 +16,21 @@
 .main-wrapper p{
     font-size: auto;
 }
-.cd-headline{
+/* .cd-headline{
     margin-top: 20px;
 
+} */
+.col-sm-6 img{
+    border-radius: 50%;
+    height: 50%;
+    width: 150px;
+}
+.col-sm-6 h3{
+    color:white;
+}
+.col-sm-6{
+    margin-top: 10px;
+}
+.home{
+    text-align: center;
 }

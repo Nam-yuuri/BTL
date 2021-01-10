@@ -82,16 +82,11 @@
         <div class="container-fluid" >
               <div class="home">
                 <div class="row" >
-                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
+                  <div class="col-sm-12" > <a href="../image/minh.jpg"><span
                     class="glyphicon glyphicon-log-in"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
                     <h3>Hoàng Võ Hoài Nam</h3>
                     <a href="homenam.php"><button type="button"  class="btn btn-outline-info">Tìm Hiểu</button></a>
                   </div>
-                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
-                    class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
-                    <h3>Đào Nhật Minh</h3>
-                    <a href="homeminh.php"><button type="button"  class="btn btn-outline-info">Tìm Hiểu</button></a>
-                  </div>                    
                 </div>
               </div>
             </div>

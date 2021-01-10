@@ -1,8 +1,16 @@
 .menu-item-2249{
     background-color: aqua;
 }
-.content{
-    margin-left: 220px;
+.col-sm-6 img{
+    border-radius: 50%;
+    height: 100%;
+}
+.col-sm-6 h3{
+    color:white;
+}
+.col-sm-6{
+    margin-top: 100px;
+}
+.work{
     text-align: center;
-    color: aqua;
 }

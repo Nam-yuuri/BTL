@@ -11,13 +11,50 @@
     <link rel="stylesheet" href="../css/work.css">
   </head>
   <body>
-        <?php include("header.php");?>
-        
-        <div class="container1" style="background:url(../image/background-work.jpg) no-repeat center  center; background-size:cover;width:1315px;height:100vh;margin-left:220px">
-          
+    <style>
+      @media (max-width:999px){
+       .col-lg-2{
+         height:0px;
+       }
+      }
+      @media (max-width:577px){
+        .col-sm-6{
+          width:200px;
+        }
+        img{
+          width:100px;
+        }
+      }
+    </style>
+    <div class="container-fluid" style="background:url(../image/background-work.jpg) no-repeat center  center; background-size:cover;height:100vh">
+      <div class="row">
+        <div class="col-lg-2">
+          <?php include("header.php");?>
+        </div>
+        </div>
+        <div class="col-lg-10">
+          <div class="container-fluid" >
+              <div class="work">
+                <div class="row" >
+                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
+                    class="glyphicon glyphicon-log-in"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+                    <h3>Hoàng Võ Hoài Nam</h3>
+                    <a href="aboutnam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                  </div>
+                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
+                    class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+                    <h3>Đào Nhật Minh</h3>
+                    <a href="aboutminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
           </div>
-
-        <?php include("footer.php");?>
+          <?php include("footer.php");?>
+        </div>
+      </div>
+    </div>        
+        
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
