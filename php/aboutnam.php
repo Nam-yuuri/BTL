@@ -103,6 +103,9 @@
           </div>
         </div>
           <div class="row work">  
+            <div class="col-lg-12 text-white">
+            <h2>Work</h2>
+            </div>
             <div class="col-lg-5 bg-white">
             <div class="service-box">
 					                            <div class="service-icon">
@@ -153,7 +156,9 @@
 			
             </div>
             </div>
-          </div>
+
+            </div>
+          
       </div>
     </div>
   </div>
