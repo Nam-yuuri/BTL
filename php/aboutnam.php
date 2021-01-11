@@ -47,7 +47,7 @@
                 </div>
               </div>
               <div class="col-lg-5 text-white">
-              <h3>cái này để đây làm sau</h3>
+              <h3>cái này không biết viết gì </h3>
               </div>
             </div>
           </div>
