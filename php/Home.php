@@ -18,10 +18,10 @@
   <?php include("header.php");?>
     <div class="container d-flex justify-content-center">
     <div class="row">
-      <col-lg-12>
-      <h4>Technology</h4><br>
-      <h1>team 10</h1>
-      </col-lg-12>
+      <div class="col-lg-12 text-center" style="margin-top:300px">
+      <h4>Game design/Software engineer/Website design and development</h4><br>
+      <h1>TEAM 18</h1>
+      </div>
     </div>
     </div>
   <?php include("footer.php");?> 

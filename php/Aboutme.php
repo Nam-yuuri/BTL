@@ -44,14 +44,13 @@
             <img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
           <h3>Hoang Vo Hoai Nam</h3>
           <a href="aboutnam.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
-              Tìm Hiểu</button></a>
+          research</button></a>
         </div>
         <div class="col-lg-6 ">
           <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span><img src="../image/minh.jpg"
               style="margin-bottom:30px" alt=""></a>
           <h3>Dao Nhat Minh</h3>
-          <a href="aboutminh.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">Tìm
-              Hiểu</button></a>
+          <a href="aboutminh.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">research</button></a>
         </div>
       </div>
       <div class="col-lg-12">
@@ -75,7 +74,7 @@
             </li>
 
 
-            <h3>distant target: </h3>
+            <h3>Distant target: </h3>
             <li>
               <p>join more larger projects and complete projects that prepare them to participate.</p>
             </li>
