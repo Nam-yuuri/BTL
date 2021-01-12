@@ -23,7 +23,7 @@
   </style>
   <div class="container-fluid" style="background:url(../image/background-home.jpg) no-repeat center  center; background-size:cover;height:100vh">
     <div class="row">
-      <div class="col-lg-2">
+      <div class="col-lg-12">
         <?php include("header.php");?>
       </div>
       </div>

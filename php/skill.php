@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/Aboutme.css">
   </head>
   <style>
   h1{
@@ -25,13 +26,7 @@
   </style>
   <body>
   <?php include("header.php");?>
-  <div class="container">
-          <div class="row">
-            <div class="col-lg-2"><a href="aboutme.php"><button type="button" class="btn btn-danger mt-2"><i class="fas fa-backspace"></i>BACK</button></a></div>
-            <div class="col-lg-10"><h1>ABOUT ME</h1></div>
-          </div>
-        </div>
-
+      <div class="col-lg-12"><h1>ABOUT ME</h1></div>
       <div class="container">
         <div id="box">
             <div class="row">
@@ -67,10 +62,27 @@
 
         </div> -->
       </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+    <div class="container-fluid" >
+        <div class="col-lg-10">
+          <div class="container-fluid" >
+              <div class="about">
+                <div class="row" >
+                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
+                    class="glyphicon glyphicon-log-in"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+                    <h3>Hoàng Võ Hoài Nam</h3>
+                    <a href="aboutnam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                  </div>
+                  <div class="col-sm-6" > <a href="../image/minh.jpg"><span
+                    class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+                    <h3>Đào Nhật Minh</h3>
+                    <a href="aboutminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                  </div>                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+        
+        <?php include("footer.php");?> 

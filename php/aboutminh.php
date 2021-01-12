@@ -8,166 +8,65 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
-  <body>
   <style>
-    .col-lg-5{
-      margin:5px 5px 5px 5px;
+  h1{
+      text-align:center;
+  }
+    #box {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 7px #DAD8D8;
     }
-    .col-lg-4{
-      margin:20px 20px 20px 20px;
+    #box,img{
+        border-radius:15px;
     }
-    .col-lg-5,.col-lg-3,img{
-    border-radius: 20px;
-    }
-    .img{
-      box-shadow: none;
-      background-color: transparent;
-      padding: 0;
-      margin-top:20px;
-    }
-    /* img{
-      width:100%;
-      height:100%;
-    } */
   </style>
-  <div class="container-fluid bg-white" >
-    <div class="container bg-dark" >
-      <div class="row information">
-        <div class="col-lg-12 text-center text-white"><h1>About Me</h1></div>
-          
-          <div class="col-lg-12">
+  <body>
+  <?php include("header.php");?>
+  <div class="container">
+          <div class="row">
+            <div class="col-lg-2"><a href="aboutme.php"><button type="button" class="btn btn-danger mt-2"><i class="fas fa-backspace"></i>BACK</button></a></div>
+            <div class="col-lg-10"><h1>ABOUT ME</h1></div>
+          </div>
+        </div>
+
+      <div class="container">
+        <div id="box">
             <div class="row">
-              <div class="col-lg-3 ">
-                <div class="img">
-                  <img src="../image/minh.jpg" alt="">
+                <div class="col-lg-4">
+                     <img src="../image/minh.jpg" alt="">
+                     <p>myself is a cheerful, sociable, enthusiastic and active person. have experience in team work</p>
                 </div>
-              </div>
-              <div class="col-lg-5 text-white">
-              <h1>Dao Nhat Minh</h1>
-              <!-- <h3>My name is Hoang Vo Hoai Nam. used to study at Thuy Loi University. is a programmer and an intern at a technology company</h3> -->
-              </div>
+                <div class="col-lg-8">
+                <h2>information</h2>
+                    <ul class="list">
+                            <li><p>Name: Dao Nhat Minh</p></li>
+                            <li><p>Birthday: 00/00/2000</p></li>
+                            <li><p>Phone: 00000000</p></li>
+                            <li><p>Address: Ha Nam</p></li>
+                            <li><p>Mail: <a href="#">xxxxxxxxxx</a></p></li>
+                            <li><p>Degree: student</p></li>
+                            <li><p>Branch: Information Technology</p></li>
+                    </ul>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>target</h2>
+                        <ul>
+                            <li><h3>Short-term goal: </h3><p>Become a trainee and strive to be an employee in the near future. become a programmer</p></li>
+                            <li><h3>distant target: </h3><p>I am a student who has just completed the IT majoring program at MBN Academy. I have also passed CCNA certification. With the specialized knowledge I have learned, I want to find a suitable job, 
+                            which is the position of a network administrator so that I can apply and promote my abilities well. The practical work experience that I have accumulated will be the basis for me to achieve my goal of becoming a good network administrator in the future.</p></li>
+                        </ul>
+                    </div>
+            </div>
         </div>
-      </div>
+        <!-- <div id="box">
 
-      <div class="container bg-dark">
-        <div class="row skill">
-          <div class="col-lg-6 text-white">
-            <h2>information</h2>
-            <ul class="list">
-                    <li><p>Birthday: dd/mm/yyyy</p></li>
-                    <li><p>Phone: 1111111</p></li>
-                    <li><p>Address: Ha Nam</p></li>
-                    <li><p>Mail: <a href="#">xxxxxxx</a></p></li>
-                    <li><p>Age: 20</p></li>
-                    <li><p>Degree: student</p></li>
-                    <li><p>Branch: Information Technology</p></li>
-            </ul>
-          </div>
-          <div class="col-lg-6 text-white">
-          <h2>Target</h2>
-            <ul>
-              <li><h3>Short-term goal: </h3><p>Become a trainee and strive to be an employee in the near future. become a programmer</p></li>
-              <li><h3>distant target: </h3><p>Become an experienced programmer. strive to become a department head</p></li>
-            </ul>
-            <!-- <h2>Professional Skills</h2>
-                    <span>C++</span><span style="float:right">50%</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-danger active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                        50%
-                      </div>
-                    </div>
-                    <span>C#</span><span style="float:right">65%</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-info active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                        65%
-                      </div>
-                    </div>
-                    <span>Python</span><span style="float:right">60%</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                        60%
-                      </div>
-                    </div>
-                    <span>SQL</span><span style="float:right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                        75%
-                      </div>
-                    </div>
-                    <span>PHP</span><span style="float:right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                        75%
-                      </div>
-                    </div> -->
-          </div>
-        </div>
-          <div class="row work">  
-            <div class="col-lg-12 text-white">
-            <h2>Work</h2>
-            </div>
-            <div class="col-lg-5 bg-white">
-            <div class="service-box">
-					                            <div class="service-icon">
-					                                <i class="fa fa-smile-o"></i>
-					                            </div>
-					                            <div class="service-content">
-					                                <h3>Creative Design</h3>
-					                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					                            </div>
-			
-            </div>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5  bg-white">
-            <div class="service-box">
-					                            <div class="service-icon">
-					                                <i class="fa fa-smile-o"></i>
-					                            </div>
-					                            <div class="service-content">
-					                                <h3>Creative Design</h3>
-					                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					                            </div>
-			
-            </div>
-            </div>
-            <div class="col-lg-5  bg-white">
-            <div class="service-box">
-					                            <div class="service-icon">
-					                                <i class="fa fa-smile-o"></i>
-					                            </div>
-					                            <div class="service-content">
-					                                <h3>Creative Design</h3>
-					                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					                            </div>
-			
-            </div>
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5  bg-white">
-            <div class="service-box">
-					                            <div class="service-icon">
-					                                <i class="fa fa-smile-o"></i>
-					                            </div>
-					                            <div class="service-content">
-					                                <h3>Creative Design</h3>
-					                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					                            </div>
-			
-            </div>
-            </div>
-
-            </div>
-          
+        </div> -->
       </div>
-    </div>
-  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
