@@ -47,7 +47,8 @@
                 </div>
               </div>
               <div class="col-lg-5 text-white">
-              <h3>cái này không biết viết gì </h3>
+              <h1>Hoang Vo Hoai Nam</h1>
+              <!-- <h3>My name is Hoang Vo Hoai Nam. used to study at Thuy Loi University. is a programmer and an intern at a technology company</h3> -->
               </div>
             </div>
           </div>
@@ -69,7 +70,12 @@
             </ul>
           </div>
           <div class="col-lg-6 text-white">
-            <h2>Professional Skills</h2>
+          <h2>Target</h2>
+            <ul>
+              <li><h3>Short-term goal: </h3><p>Become a trainee and strive to be an employee in the near future. become a programmer</p></li>
+              <li><h3>distant target: </h3><p>Become an experienced programmer. strive to become a department head</p></li>
+            </ul>
+            <!-- <h2>Professional Skills</h2>
                     <span>C++</span><span style="float:right">50%</span>
                     <div class="progress">
                       <div class="progress-bar progress-bar-striped progress-bar-danger active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
@@ -99,7 +105,7 @@
                       <div class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
                         75%
                       </div>
-                    </div>
+                    </div> -->
           </div>
         </div>
           <div class="row work">  

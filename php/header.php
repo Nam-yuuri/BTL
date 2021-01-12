@@ -79,10 +79,10 @@
                             </li>
                             <li id="menu-item-2250"
                                 class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-2250">
-                                <a href="Target.php">
+                                <a href="resume.php">
                                     <i class="fas fa-file"></i>
                                     <span>
-                                        Target
+                                        Resume
                                     </span>
                                 </a>
                             </li>
