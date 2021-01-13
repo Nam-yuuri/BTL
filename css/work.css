@@ -1,0 +1,34 @@
+.container {
+    background-color: #ffffff;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 2.5rem 3.125rem rgba(134, 151, 168, 0.1);
+    max-width: 64.375rem;
+    height: 100vh;
+}
+
+.case-item__icon {
+    margin-bottom: 1rem;
+}
+
+.case-item {
+    border: 3px solid #F5F8F9;
+    border-radius: 30px;
+    padding: 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.testimonials img {
+    width: 70px;
+}
+
+.col-md-4 {
+    margin-top: 1rem;
+}
+
+.case-item__caption {
+    position: absolute;
+    z-index: 1;
+}
