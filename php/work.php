@@ -27,12 +27,12 @@
                   <div class="col-sm-6" > <a href="../image/nam.jpg"><span
                     class="glyphicon glyphicon-log-in"></span><img src="../image/nam.jpg" style="margin-bottom:30px" alt=""></a>
                     <h3>Hoàng Võ Hoài Nam</h3>
-                    <a href="resumenam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                    <a href="worknam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
                   </div>
                   <div class="col-sm-6" > <a href="../image/minh.jpg"><span
                     class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
                     <h3>Đào Nhật Minh</h3>
-                    <a href="resumeminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                    <a href="workminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
                   </div>                    
                 </div>
               </div>
