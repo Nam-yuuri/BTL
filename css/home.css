@@ -1,5 +1,6 @@
 .home{
-    background-color:aqua;
+    background-color:rgb(121, 121, 121);
+    color: white;
 }
 .content{
     margin-left: 220px;
@@ -8,10 +9,7 @@
 }
 .glyphicon{
     margin-bottom: 50px;
-    background-color: rgb(197, 13, 13);
-}
-.carousel-caption h4,p{
-    color: red;
+    background-color: rgb(90, 89, 89);
 }
 .main-wrapper p{
     font-size: auto;
@@ -30,4 +28,12 @@
 }
 .col-sm-6{
     margin-top: 10px;
+}
+.main-wrapper{
+    font-size: 180%;
+}
+h1{
+    font-size: 700%;
+    color: rgb(0, 0, 0);
+    text-shadow:5px 5px 5px rgb(59, 59, 59);
 }

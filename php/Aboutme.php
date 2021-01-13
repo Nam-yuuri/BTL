@@ -40,17 +40,30 @@
     <div id="box">
       <div class="row">
         <div class="col-lg-6 ">
+          <div class="row d-flex justify-content-center">
           <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
             <img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+          </div>
+          <div class="row d-flex justify-content-center">
           <h3>Hoang Vo Hoai Nam</h3>
+          </div>
+          <div class="row d-flex justify-content-center">
           <a href="aboutnam.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
           research</button></a>
+          </div>
         </div>
         <div class="col-lg-6 ">
-          <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span><img src="../image/minh.jpg"
-              style="margin-bottom:30px" alt=""></a>
+          <div class="row d-flex justify-content-center">
+          <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
+            <img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+          </div>
+          <div class="row d-flex justify-content-center">
           <h3>Dao Nhat Minh</h3>
-          <a href="aboutminh.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">research</button></a>
+          </div>
+          <div class="row d-flex justify-content-center">
+          <a href="aboutminh.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
+          research</button></a>
+          </div>
         </div>
       </div>
       <div class="col-lg-12">
