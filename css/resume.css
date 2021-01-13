@@ -131,7 +131,7 @@
     }
     
     .box {
-        width: 100%;
+        max-width: 70%;
         border: 2px;
         height: 1000px;
         overflow: auto;
