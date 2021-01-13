@@ -129,12 +129,3 @@
         background-repeat: no-repeat;
         box-sizing: border-box;
     }
-    
-    .box {
-        max-width: 70%;
-        border: 2px;
-        height: 1000px;
-        overflow: auto;
-        scroll-behavior: smooth;
-        /* <-- for smooth scroll */
-    }

@@ -53,6 +53,7 @@
           <a href="aboutminh.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">research</button></a>
         </div>
       </div>
+
       <div class="col-lg-12">
         <h2>ACHIEVEMENT</h2>
         <ul class="list">
@@ -64,6 +65,7 @@
           </li>
         </ul>
       </div>
+      
       <div class="row">
         <div class="col-lg-12">
           <h2>target</h2>

@@ -18,7 +18,7 @@
   <div class="container">
 	<h1 class="title title--h1 title__separate">Resume</h1>
 
-<div class='box'>
+
   
 <div class="section">
 					<h2 class="title title--h2"><img class="title-icon" src="../image/education.png" alt=""> Education</h2>
@@ -104,10 +104,6 @@
 				</div>
 				</div>
 	</div>
-</div>
-
- 
-</div>
 </div>
                 
 <?php include("footer.php");?>
