@@ -11,9 +11,6 @@
             <a class="nav-link" href="aboutme.php">ABOUT</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="skill.php">SKILLS</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="resume.php">RESUME</a>
         </li>
         <li class="nav-item">
