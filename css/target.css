@@ -1,24 +1,16 @@
-.menu-item-2250 {
-    background-color: #252a30;
+.menu-item-2250{
+    background-color: aqua;
 }
-
-.col-sm-6 img {
+.col-sm-6 img{
     border-radius: 50%;
     height: 100%;
 }
-
-.col-sm-6 h3 {
-    color: #44566C;
+.col-sm-6 h3{
+    color:white;
 }
-
-.col-sm-6 {
+.col-sm-6{
     margin-top: 100px;
 }
-
-.target {
+.target{
     text-align: center;
-}
-
-.btn {
-    color: #44566C;
 }

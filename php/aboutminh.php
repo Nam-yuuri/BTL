@@ -22,13 +22,18 @@
     #box,img{
         border-radius:15px;
     }
+    .about{
+    background-color:rgb(121, 121, 121);
+    color: white;
+}
+
   </style>
   <body>
   <?php include("header.php");?>
   <div class="container">
           <div class="row">
-            <div class="col-lg-2"><a href="aboutme.php"><button type="button" class="btn btn-danger mt-2"><i class="fas fa-backspace"></i>BACK</button></a></div>
-            <div class="col-lg-10"><h1></h1></div>
+            <!-- <div class="col-lg-2"><a href="aboutme.php"><button type="button" class="btn btn-danger mt-2"><i class="fas fa-backspace"></i>BACK</button></a></div> -->
+            <div class="col-lg-12"><h1>ABOUT ME</h1></div>
           </div>
         </div>
 
@@ -43,10 +48,10 @@
                 <h2>information</h2>
                     <ul class="list">
                             <li><p>Name: Dao Nhat Minh</p></li>
-                            <li><p>Birthday: 13/04/2000</p></li>
-                            <li><p>Phone: 0913903597</p></li>
+                            <li><p>Birthday: 00/00/2000</p></li>
+                            <li><p>Phone: 00000000</p></li>
                             <li><p>Address: Ha Nam</p></li>
-                            <li><p>Mail: <a href="#">daonhatminhwru2000@gmail.com</a></p></li>
+                            <li><p>Mail: <a href="#">xxxxxxxxxx</a></p></li>
                             <li><p>Degree: student</p></li>
                             <li><p>Branch: Information Technology</p></li>
                     </ul>

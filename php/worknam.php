@@ -14,7 +14,6 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/work.css">
 </head>
-
 <?php include("header.php");?>
 
 <body style="background:url(../image/background-work.jpg) no-repeat center  center; background-size:cover;height:100vh">
@@ -74,17 +73,17 @@
         <div class="col-md-4 testimonials">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
           <img src="../image/avatar.jpg">
-          <p><b>Tùng</b><br>Pr0pl4y3r</p>
+          <p><b>Tùng</b></p>
         </div>
         <div class="col-md-4 testimonials">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
           <img src="../image/avatar.jpg">
-          <p><b>Tùng</b><br>Pr0pl4y3r</p>
+          <p><b>Tùng</b></p>
         </div>
         <div class="col-md-4 testimonials">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
           <img src="../image/avatar.jpg">
-          <p><b>Tùng</b><br>Pr0pl4y3r</p>
+          <p><b>Tùng</b></p>
         </div>
       </div>
   </div>

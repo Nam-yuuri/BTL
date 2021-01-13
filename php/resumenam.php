@@ -11,8 +11,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="../css/resume.css">
   </head>
+  <style>
+  h1{
+      text-align:center;
+  }
+    }
+  </style>
+
   <body>
   <?php include("header.php");?>
+  <div class="row">
+            <div class="col-lg-2"><a href="resume.php"><button type="button" class="btn btn-danger mt-2"><i class="fas fa-backspace"></i>BACK</button></a></div>
+          </div>
 
   <div class="container-fluid" style="background:url(../image/background-target.jpg) no-repeat center  center; background-size:cover;height:100%">
   <div class="container">

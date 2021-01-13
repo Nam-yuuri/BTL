@@ -19,41 +19,56 @@
     text-align: center;
   }
 
-  #box {
+  /* #box {
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 7px #DAD8D8;
-  }
+  } */
 
   #box,
   img {
     border-radius: 15px;
   }
+  }
 </style>
 
-<body>
+<body >
   <?php include("header.php");?>
-  <div class="col-lg-12">
-    <h1>ABOUT US</h1>
-  </div>
+<div class="container-fluid" style="background:url(../image/background-aboutme.jpg) no-repeat center  center; background-size:cover">
   <div class="container">
     <div id="box">
+    <div class="col-lg-12">
+    <h1>ABOUT US</h1>
+  </div>
+
       <div class="row">
         <div class="col-lg-6 ">
+          <div class="row d-flex justify-content-center"  style="height:270px">
           <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
-            <img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
-          <h3>Hoang Vo Hoai Nam</h3>
+            <img src="../image/nam.jpg" style="margin-bottom:30px" alt=""></a>
+          </div>
+          <div class="row d-flex justify-content-center">
+          <h3>Hoàng Võ Hoài Nam</h3>
+          </div>
+          <div class="row d-flex justify-content-center" >
           <a href="aboutnam.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
           research</button></a>
+          </div>
         </div>
         <div class="col-lg-6 ">
-          <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span><img src="../image/minh.jpg"
-              style="margin-bottom:30px" alt=""></a>
-          <h3>Dao Nhat Minh</h3>
-          <a href="aboutminh.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">research</button></a>
+          <div class="row d-flex justify-content-center" style="height:270px">
+          <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
+            <img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+          </div>
+          <div class="row d-flex justify-content-center" >
+          <h3>Đào Nhật Minh</h3>
+          </div>
+          <div class="row d-flex justify-content-center">
+          <a href="aboutminh.php"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
+          research</button></a>
+          </div>
         </div>
       </div>
-
       <div class="col-lg-12">
         <h2>ACHIEVEMENT</h2>
         <ul class="list">
@@ -65,8 +80,7 @@
           </li>
         </ul>
       </div>
-      
-      <div class="row">
+      <div class="row pl-3">
         <div class="col-lg-12">
           <h2>target</h2>
           <ul>
@@ -93,4 +107,5 @@
     </div>
   </div>
 
+</div>
   <?php include("footer.php");?>

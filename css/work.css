@@ -32,3 +32,18 @@
     position: absolute;
     z-index: 1;
 }
+.work{
+    background-color:rgb(121, 121, 121);
+    color: white;
+
+}
+.col-sm-6 img {
+    border-radius: 50%;
+}    
+.col-sm-6 {
+    margin-top: 100px;
+}
+
+.target {
+    text-align: center;
+}

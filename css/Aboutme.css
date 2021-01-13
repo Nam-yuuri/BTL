@@ -1,5 +1,6 @@
-.menu-item-2251 {
-    background-color: aqua;
+.about{
+    background-color:rgb(121, 121, 121);
+    color: white;
 }
 
 .col-sm-6 img {
@@ -19,4 +20,7 @@
 
 .about {
     text-align: center;
+}
+#box{
+    background-color: white;
 }
