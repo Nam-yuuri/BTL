@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>CV</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,12 +27,12 @@
                   <div class="col-sm-6" > <a href="../image/nam.jpg"><span
                     class="glyphicon glyphicon-log-in"></span><img src="../image/nam.jpg" style="margin-bottom:30px" alt=""></a>
                     <h3>Hoàng Võ Hoài Nam</h3>
-                    <a href="worknam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                    <a href="worknam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">research</button></a>
                   </div>
                   <div class="col-sm-6" > <a href="../image/minh.jpg"><span
                     class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
                     <h3>Đào Nhật Minh</h3>
-                    <a href="workminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">Tìm Hiểu</button></a>
+                    <a href="workminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">research</button></a>
                   </div>                    
                 </div>
               </div>
