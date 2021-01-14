@@ -25,12 +25,12 @@
               <div class="target">
                 <div class="row" >
                   <div class="col-sm-6" > <a href="../image/nam.jpg"><span
-                    class="glyphicon glyphicon-log-in"></span><img src="../image/nam.jpg" style="margin-bottom:30px" alt=""></a>
+                    class="glyphicon glyphicon-log-in"></span><img src="../image/nam.jpg" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
                     <h3>Hoàng Võ Hoài Nam</h3>
                     <a href="worknam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">research</button></a>
                   </div>
                   <div class="col-sm-6" > <a href="../image/minh.jpg"><span
-                    class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+                    class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
                     <h3>Đào Nhật Minh</h3>
                     <a href="workminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">research</button></a>
                   </div>                    
