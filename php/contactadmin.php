@@ -26,7 +26,14 @@
   <div class="container-fluid">
     <div class="row">
       <!-- <div class="col-md-12" style="height:50px"> -->
-        <?php include("header.php");?>
+        <?php     session_start();
+
+        include("headeradmin.php");
+                    //   echo 'id : ' . $_SESSION['name'];
+                    // $_SESSION['name'] =  $row['id'];
+
+        
+        ?>
       <!-- </div> -->
     </div>
     </div>
