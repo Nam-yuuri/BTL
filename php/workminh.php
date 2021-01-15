@@ -17,7 +17,7 @@
 </style>
 <?php include("header.php");?>
 
-<body style="background:url(../image/background-work.jpg) no-repeat center  center; background-size:cover;height:100vh">
+<body style="background:url(https://c1.wallpaperflare.com/preview/248/992/890/business-business-meeting-coffee-conference-room.jpg) no-repeat center  center; background-size:cover;height:100vh">
 
 <div class="container">
 <div class="section">

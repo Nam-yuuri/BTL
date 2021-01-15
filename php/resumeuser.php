@@ -21,13 +21,16 @@
 </style>
 
 <body>
-	<?php include("header.php");
+	<?php 
 	          $host='localhost';
 			  $uer='root';
 			  $pass='';
 			  $db_name='btl';
-			if(isset($_GET['id'])){
-			  $id = $_GET['id'];
+			  session_start();
+			//   echo 'id : ' . $_SESSION['name'];
+
+			  if(isset($_GET['id'])){
+				$id = $_GET['id'];
 		  }
 		  $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
 		  if ($conn->connect_error) {
@@ -67,17 +70,24 @@
 			  $per3 = $_POST['percent3'];
 			  $ski4 = $_POST['skill4'];
 			  $per4 = $_POST['percent4'];
-			  $sqln = "update cars set id = '".$id."', school1='".$sch1."', time1 ='".$tim1."', description1 ='".$des1."', school2 ='".$sch2."', time2 ='".$tim2."', 
-			  description2 ='".$des2."',school3 ='".$sch3."', time3 ='".$tim3."', description3 ='".$des3."', experience1 ='".$exp1."', time4 ='".$tim4."',  
-			  description4 ='".$des4."',experience2 ='".$exp2."', time5 ='".$tim5."', description5 ='".$des5."', experience3 ='".$exp3."', time6 ='".$tim6."',  
-			  description6 ='".$des6."',skill1 ='".$ski1."', percent1 ='".$per1."', skill2 ='".$ski2."', percent2 ='".$per2."', skill3 ='".$ski3."',percent3 ='".$per3."',skill4 ='".$ski4."',percent4 ='".$per4."'  
-			  where id = ".$id;
+			//   $sqln = "update cars set id = '".$id."', school1='".$sch1."', time1 ='".$tim1."', description1 ='".$des1."', school2 ='".$sch2."', time2 ='".$tim2."', 
+			//   description2 ='".$des2."',school3 ='".$sch3."', time3 ='".$tim3."', description3 ='".$des3."', experience1 ='".$exp1."', time4 ='".$tim4."',  
+			//   description4 ='".$des4."',experience2 ='".$exp2."', time5 ='".$tim5."', description5 ='".$des5."', experience3 ='".$exp3."', time6 ='".$tim6."',  
+			//   description6 ='".$des6."',skill1 ='".$ski1."', percent1 ='".$per1."', skill2 ='".$ski2."', percent2 ='".$per2."', skill3 ='".$ski3."',percent3 ='".$per3."',skill4 ='".$ski4."',percent4 ='".$per4."'  
+			//   where id = ".$id;
 			  if(mysqli_query($conn,$sqln)){
-				  header("location:resume.php");
+				  header("location:resumeuser.php");
+				//   $_SESSION['name'] =  $row['id'];
 			  }
-		  }
-		  ?>
 
+		  }
+		  $_SESSION['name'] =  $row['id'];
+		//   echo 'id : ' . $row['id'];
+		//   echo 'id : ' . $_SESSION['name'];
+		// echo 'id1 : ' . $id;
+
+		  ?>
+<?php include("headeruser.php");?>
 	<!-- <div class="row">
 		<div class="col-lg-2"><a href="resume.php"><button type="button" class="btn btn-danger mt-2"><i
 						class="fas fa-backspace"></i>BACK</button></a></div>

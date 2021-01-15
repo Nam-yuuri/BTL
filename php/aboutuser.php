@@ -34,13 +34,15 @@
     color: white;
   }
 </style>
-
 <body style="background:url(https://c1.wallpaperflare.com/preview/830/150/561/sackcloth-sackcloth-textured-laptop-ipad.jpg) no-repeat center  center; background-size:cover">
-  <?php include("header.php");
+  <?php       
+
           $host='localhost';
           $uer='root';
           $pass='';
           $db_name='btl';
+          session_start();
+
         if(isset($_GET['id'])){
           $id = $_GET['id'];
       }
@@ -67,8 +69,15 @@
           $bra = $_POST['branch'];
           $sho = $_POST['short-term goal'];
           $dis = $_POST['distant target'];
+
       }
+          // Lưu Session
+    $_SESSION['name'] =  $row['id'];
+    include("headeruser.php");
+
       ?>
+    <!-- <div class="container-fluid"    style="background:url(https://c1.wallpaperflare.com/preview/830/150/561/sackcloth-sackcloth-textured-laptop-ipad.jpg) no-repeat center  center; background-size:cover"> -->
+
 
   <div class="container ">
     <div id="box">
@@ -144,18 +153,11 @@
         </div>
       </div>
     </div>
-
     <!-- <div id="box">
 
-
-
         </div> -->
-
   </div>
 
-      </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <?php include("footer.php") ?></body>
 </body>
 

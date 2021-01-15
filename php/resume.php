@@ -18,7 +18,7 @@
 <body>
   <?php include("header.php");?>
   <div class="container-fluid"
-    style="background:url(../image/background-target.jpg) no-repeat center  center; background-size:cover;height:100vh">
+    style="background:url(https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg) no-repeat center  center; background-size:cover;height:100vh">
     <div class="col-lg-12">
       <div class="container-fluid">
         <div class="target">

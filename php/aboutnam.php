@@ -19,9 +19,9 @@
   }
 
   #box {
-    border: 1px solid;
+    border: 2px solid;
     padding: 10px;
-    box-shadow: 5px 7px #DAD8D8;
+    background-color:white;
   }
 
   #box,
@@ -35,7 +35,7 @@
   }
 </style>
 
-<body>
+<body style="background:url(https://c1.wallpaperflare.com/preview/830/150/561/sackcloth-sackcloth-textured-laptop-ipad.jpg) no-repeat center  center; background-size:cover">
   <?php include("header.php");
           $host='localhost';
           $uer='root';
@@ -67,24 +67,17 @@
           $bra = $_POST['branch'];
           $sho = $_POST['short-term goal'];
           $dis = $_POST['distant target'];
-          $sqln = "update cars set id = '".$id."', image='".$ima."', introduce ='".$int."', name ='".$nam."', birthday ='".$bir."', phone ='".$pho."', address ='".$add."',
-          mail ='".$mai."', degree ='".$deg."', branch ='".$bra."', short-term goal ='".$sho."', distant target ='".$dis."'  where id = ".$id;
-          if(mysqli_query($conn,$sqln)){
-              header("location:aboutme.php");
-          }
       }
       ?>
-  <div class="container">
+
+  <div class="container ">
+    <div id="box">
     <div class="row">
-      <!-- <div class="col-lg-2"><a href="aboutme.php"><button type="button" class="btn btn-danger mt-2"><i class="fas fa-backspace"></i>BACK</button></a></div> -->
       <div class="col-lg-12">
         <h1>ABOUT ME</h1>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div id="box">
       <div class="row">
         <div class="col-lg-4">
           <img src="../image/<?php echo $row['image']  ?>" alt="">
@@ -151,21 +144,19 @@
         </div>
       </div>
     </div>
+
     <!-- <div id="box">
 
+
+
         </div> -->
+
   </div>
+
+      </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  <?php include("footer.php") ?></body>
 </body>
 
 </html>

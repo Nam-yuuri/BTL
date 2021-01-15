@@ -17,7 +17,7 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/home.css">
 </head>
-<body style="background:url(../image/background-home.jpg) no-repeat center  center; background-size:cover;height:100vh;">
+<body style="background:url(https://images.wallpaperscraft.com/image/keyboard_telephone_desktop_179668_3840x2160.jpg) no-repeat center  center; background-size:cover;height:100vh;">
   <?php include("header.php");?>
   <div class="container d-flex justify-content-center">
 

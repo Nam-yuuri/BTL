@@ -84,7 +84,7 @@
 	</div> -->
 
 	<div class="container-fluid"
-		style="background:url(../image/background-target.jpg) no-repeat center  center; background-size:cover;height:100%">
+		style="background:url(https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg) no-repeat center  center; background-size:cover;height:100%">
 		<div class="container">
 			<h1 class="title title--h1 title__separate">Resume</h1>
 

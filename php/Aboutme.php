@@ -19,20 +19,19 @@
     text-align: center;
   }
 
-  /* #box {
-    border: 1px solid;
+  #box {
+    border: 2px solid;
     padding: 10px;
-    box-shadow: 5px 7px #DAD8D8;
-  } */
+  }
 
-  #box,
-  img {
+  #box,img {
     border-radius: 15px;
   }
   }
 </style>
 
-<body>
+<body     style="background:url(https://c1.wallpaperflare.com/preview/830/150/561/sackcloth-sackcloth-textured-laptop-ipad.jpg) no-repeat center  center; background-size:cover">
+
   <?php include("header.php");
     
             
@@ -40,11 +39,12 @@
 
 
   <div class="container-fluid"
-    style="background:url(../image/background-aboutme.jpg) no-repeat center  center; background-size:cover">
+    style="background:url(https://c1.wallpaperflare.com/preview/830/150/561/sackcloth-sackcloth-textured-laptop-ipad.jpg) no-repeat center  center; background-size:cover">
     <div class="container">
       <div id="box">
         <div class="col-lg-12">
           <h1>ABOUT US</h1>
+          <hr>
         </div>
 
         <div class="row">

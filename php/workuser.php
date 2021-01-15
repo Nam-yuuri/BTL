@@ -14,7 +14,9 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="../css/work.css">
 </head>
-<?php include("header.php");?>
+<?php           session_start();
+
+include("headeruser.php");?>
 
 <body style="background:url(https://c1.wallpaperflare.com/preview/248/992/890/business-business-meeting-coffee-conference-room.jpg) no-repeat center  center; background-size:cover;height:100vh">
 
@@ -88,3 +90,4 @@
       </div>
   </div>
 </section>
+<?php include("footer.php");?>
