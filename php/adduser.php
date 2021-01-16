@@ -17,7 +17,7 @@
     $host='localhost';
     $uer='root';
     $pass='';
-    $db_name='btl';
+    $db_name='cv';
     // Create connection
     $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
     if ($conn->connect_error) {
@@ -42,7 +42,7 @@
                     }else{header("location:Aboutme.php?temp=1");}
                 }
             }else{header("location:work.php?temp=1");}
-        }else{header("location:resume.php?temp=1");}
+        }else{header("location:accountadmin.php?temp=1");}
     }
     ?>
     <style>

@@ -51,7 +51,7 @@
           <div class="col-lg-6 ">
             <div class="row d-flex justify-content-center" style="height:270px">
               <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
-                <img src="../image/nam.jpg" style="margin-bottom:30px" alt=""></a>
+                <img src="../image/nam.jpg" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
             </div>
             <div class="row d-flex justify-content-center">
               <h3>Hoàng Võ Hoài Nam</h3>
@@ -64,7 +64,7 @@
           <div class="col-lg-6 ">
             <div class="row d-flex justify-content-center" style="height:270px">
               <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
-                <img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+                <img src="../image/minh.jpg" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
             </div>
             <div class="row d-flex justify-content-center">
               <h3>Đào Nhật Minh</h3>
