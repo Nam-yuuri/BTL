@@ -57,7 +57,7 @@
               <h3>Hoàng Võ Hoài Nam</h3>
             </div>
             <div class="row d-flex justify-content-center">
-              <a href="aboutnam.php?id='1'"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
+              <a href="aboutnam.php?id=1"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
                   research</button></a>
             </div>
           </div>
@@ -70,7 +70,7 @@
               <h3>Đào Nhật Minh</h3>
             </div>
             <div class="row d-flex justify-content-center">
-              <a href="aboutminh.php?id='2'"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
+              <a href="aboutminh.php?id=2"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
                   research</button></a>
             </div>
           </div>
