@@ -34,7 +34,7 @@
               <div class="main-wrapper">
                 <p class="cd-headline clip is-full-width">
                   <span>We are Professional</span> <span class="typer" data-colors="rgb(0, 0, 0);" id="main"
-                    data-words="Game design,Software engineer, web programming, Photograper" data-delay="100"
+                    data-words="Web Design,Graphic Design, Photoshop, Illustrator" data-delay="100"
                     data-deletedelay="1000" style="color: rgb(0, 0, 0);"> </span>
                 </p>
               </div> <!-- /.main-wrapper -->

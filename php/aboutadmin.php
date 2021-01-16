@@ -40,7 +40,7 @@
           $host='localhost';
           $uer='root';
           $pass='';
-          $db_name='btl';
+          $db_name='cv';
           session_start();
 
         if(isset($_GET['id'])){
@@ -90,8 +90,8 @@
 
       <div class="row">
         <div class="col-lg-4">
-          <img src="../image/<?php echo $row['image']  ?>" alt="">
-          <p>myself is a cheerful, sociable, enthusiastic and active person. have experience in team work</p>
+          <img src="../image/<?php echo $row['image']  ?>" style="width:206px;height:206px" alt="">
+          <p><?php echo $row['introduce']  ?></p>
         </div>
         <div class="col-lg-8">
           <h2>information</h2>

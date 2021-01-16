@@ -20,7 +20,7 @@
     $host='localhost';
     $uer='root';
     $pass='';
-    $db_name='btl';
+    $db_name='cv';
     session_start();
 
     // Create connection
@@ -45,7 +45,6 @@
                             <th>ACCOUNT</th>
                             <th>PASSWORD</th>
                             <th>ADD</th>
-                            <th>EDIT</th>
                             <th>DELETE</th>
                         </tr>
                     </thead>
@@ -59,7 +58,6 @@
                             <td><?php echo $post['account'] ?></td>
                             <td><?php echo $post['password'] ?></td>
                             <td><button type="button" class="btn btn-link"><a href="Homeadmin.php?id='<?php  echo $post['id']?>'"  title='Update Record' data-toggle='tooltip'><i class="fas fa-eye"></i>VIEW</a></button></td>
-                            <td><button type="button" class="btn btn-link"><a href="update.php?id='<?php echo $post['id'] ?>'" title='Update Record' data-toggle='tooltip'><i class="fas fa-edit"></i>UPDATE</a></button></td>
                             <td><button type="button" class="btn btn-link"><a href="delete.php?id='<?php echo $post['id'] ?>'" title='Update Record' data-toggle='tooltip'><i class="fas fa-trash-alt"></i>DELETE</a></button></td>
                         </tr>
                     <?php

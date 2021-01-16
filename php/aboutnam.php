@@ -40,7 +40,7 @@
           $host='localhost';
           $uer='root';
           $pass='';
-          $db_name='btl';
+          $db_name='cv';
         if(isset($_GET['id'])){
           $id = $_GET['id'];
       }
@@ -74,14 +74,14 @@
     <div id="box">
     <div class="row">
       <div class="col-lg-12">
-        <h1>ABOUT ME</h1>
+        <h1>ABOUT ME</h1><hr>
       </div>
     </div>
 
       <div class="row">
         <div class="col-lg-4">
           <img src="../image/<?php echo $row['image']  ?>" alt="">
-          <p>myself is a cheerful, sociable, enthusiastic and active person. have experience in team work</p>
+          <p><?php echo $row['introduce']  ?></p>
         </div>
         <div class="col-lg-8">
           <h2>information</h2>

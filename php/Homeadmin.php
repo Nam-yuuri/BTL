@@ -21,7 +21,7 @@
           $host='localhost';
           $uer='root';
           $pass='';
-          $db_name='btl';
+          $db_name='cv';
           session_start();
 
         if(isset($_GET['id'])){
