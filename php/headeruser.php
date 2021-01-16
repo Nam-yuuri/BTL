@@ -1,3 +1,5 @@
+  <?php session_start(); ?>
+  
   <nav class="navbar navbar-expand-md navbar-light bg-light text-white sticky-top pb-0" style="width:100%">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>

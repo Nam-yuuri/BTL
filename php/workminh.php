@@ -1,8 +1,10 @@
+<?php 
+  require("config.php");
+?>
 <!doctype html>
 <html lang="en">
-
 <head>
-  <title>CV</title>
+  <title>Title</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,92 +19,57 @@
 </style>
 <?php include("header.php");?>
 
-<body style="background:url(https://c1.wallpaperflare.com/preview/248/992/890/business-business-meeting-coffee-conference-room.jpg) no-repeat center  center; background-size:cover;height:100vh">
+<body style="background:url(../image/background-work.jpg) no-repeat center  center; background-size:cover;height:100vh">
+
+
+<?php 
+  $result = mysqli_query($conn, "SELECT * FROM work");
+  if(mysqli_num_rows($result)>0){
+    $work = mysqli_fetch_all($result);
+  }
+?>
 
 <div class="container">
 <div class="section">
 					<h2 class="title title--h2">What I'm Doing</h2>
 					<div class="row">
+          <?php foreach($work as $i){ ?>
 
 						<!-- Case Item -->
 						<div class="col-12 col-lg-6 case-item-wrap">
 							<div class="case-item" style="height: 190px;">
-                                <!-- <img class="case-item__icon" src="../assets/icons/icon-design.svg" alt=""> -->
-                                <img class="case-item__icon" src="../image/webdesign.png" alt="">
-								<h3 class="title title--h3">Web Design</h3>
-								<p class="case-item__caption">The most modern and high-quality design made at a professional level. </p>
+                <img class="case-item__icon" src="<?php echo $i[3] ?>">
+								<h3 class="title title--h3"><?php echo $i[1] ?></h3>
+								<p class="case-item__caption"><?php echo $i[2] ?></p>
 							</div>
 						</div>
-								
-						<!-- Case Item -->
-						<div class="col-12 col-lg-6 case-item-wrap">
-							<div class="case-item" style="height: 190px;">
-                                <!-- <img class="case-item__icon" src="../assets/icons/icon-dev.svg" alt=""> -->
-                                <img class="case-item__icon" src="../image/webdevelopment.png" alt="">
-								<h3 class="title title--h3">Web Development</h3>
-								<p class="case-item__caption">High-quality development of sites at the professional level.</p>
-							</div>
-						</div>
-								
-						<!-- Case Item -->
-						<div class="col-12 col-lg-6 case-item-wrap">
-							<div class="case-item" style="height: 190px;">
-                                <!-- <img class="case-item__icon" src="../assets/icons/icon-app.svg" alt=""> -->
-                                <img class="case-item__icon" src="../image/mobileapps.png" alt="">
-								<h3 class="title title--h3">Mobile Apps</h3>
-								<p class="case-item__caption">Professional development of applications for iOS and Android.</p>
-							</div>
-						</div>
-								
-						<!-- Case Item -->
-						<div class="col-12 col-lg-6 case-item-wrap">
-							<div class="case-item" style="height: 190px;">
-                                <!-- <img class="case-item__icon" src="../assets/icons/icon-photo.svg" alt=""> -->
-                                <img class="case-item__icon" src="../image/photography.png" alt="">
-								<h3 class="title title--h3">Photography</h3>
-								<p class="case-item__caption">I make high-quality photos of any category at a professional level.</p>
-							</div>
-                        </div>
-                        
+            <?php } ?>   
 
 					</div>	
 				</div>
                
+
+<?php 
+  $result = mysqli_query($conn, "SELECT * FROM testimonials");
+  if(mysqli_num_rows($result)>0){
+    $testimonials = mysqli_fetch_all($result);
+  }
+?>
+
 <div class="section">
 	<h2 class="title title--h2">Testimonials</h2>
       <div class="row">
+      <?php foreach($testimonials as $i){ ?>
         <div class="col-md-4 testimonials">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
-          <img src="../image/avatar.jpg">
-          <p><b>Tùng</b></p>
+
+          <p class="text-center"><?php echo $i[2] ?></p>
+          <img class="testimonials-img" src="<?php echo $i[3] ?>">
+          <p class="o" style="#"><b><?php echo $i[1] ?></b></p>
         </div>
-        <div class="col-md-4 testimonials">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
-          <img src="../image/avatar.jpg">
-          <p><b>Tùng</b></p>
-        </div>
-        <div class="col-md-4 testimonials">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.</p>
-          <img src="../image/avatar.jpg">
-          <p><b>Tùng</b></p>
-        </div>
+      <?php } ?>   
       </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
