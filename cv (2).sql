@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 16, 2021 lúc 12:00 PM
+-- Thời gian đã tạo: Th1 17, 2021 lúc 07:41 AM
 -- Phiên bản máy phục vụ: 10.4.14-MariaDB
 -- Phiên bản PHP: 7.2.34
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `about` (
   `id` int(11) NOT NULL,
   `image` char(30) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `introduce` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `introduce` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `birthday` date NOT NULL,
   `phone` char(30) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -68,8 +68,36 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`id`, `image`, `account`, `password`) VALUES
+(0, 'logo.png', 'admin', '123'),
 (1, 'nam.jpg', 'hoainam', '123'),
 (2, 'minh.jpg', 'daonhatminh', '123');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `teamname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `introduce` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `skill` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image1` char(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image2` char(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name1` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name2` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `achievement` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `short` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `distanttarget` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `admin`
+--
+
+INSERT INTO `admin` (`id`, `teamname`, `introduce`, `skill`, `image1`, `image2`, `name1`, `name2`, `achievement`, `short`, `distanttarget`) VALUES
+(0, 'TEAM 181', 'We are Professional', 'Web Design,Graphic Design, Photoshop, Illustrator', 'nam.jpg', 'minh.jpg', 'Hoàng Võ Hoài Nam', 'Đào Nhật Minh', 'won consolation prize in a student game programming competition.each participated in technology competitions and seminars nationwide', 'Successfully complete team projects and learn new languages', 'join more larger projects and complete projects that prepare them to participate. participate in technology conferences and competitions so that more people get to know the group.');
 
 -- --------------------------------------------------------
 
@@ -140,7 +168,19 @@ CREATE TABLE `home` (
 
 INSERT INTO `home` (`id`, `name`, `introduce`, `skill`) VALUES
 (1, 'Hoàng Võ Hoài Nam', 'aksnbcaasc', 'sdvcsd,dvsdxcv,sdvsdv\r\n'),
-(2, 'Đào Nhật Minh', 'sfdvf', 'sdvsdv,sdvdv,sdvsdv,sdv');
+(2, 'Đào Nhật Minh', 'sfdvf', 'sdvsdv,sdvdv,sdvsdv,sdv'),
+(0, 'TEAM 18', 'We are ProfessionaL', 'Web Design,Graphic Design, Photoshop, Illustrator');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `resume`
+--
+
+CREATE TABLE `resume` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -185,6 +225,12 @@ ALTER TABLE `account`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `admin`
+--
+ALTER TABLE `admin`
+  ADD KEY `id` (`id`);
+
+--
 -- Chỉ mục cho bảng `education`
 --
 ALTER TABLE `education`
@@ -200,6 +246,12 @@ ALTER TABLE `experience`
 -- Chỉ mục cho bảng `home`
 --
 ALTER TABLE `home`
+  ADD KEY `id` (`id`);
+
+--
+-- Chỉ mục cho bảng `resume`
+--
+ALTER TABLE `resume`
   ADD KEY `id` (`id`);
 
 --
@@ -235,6 +287,12 @@ ALTER TABLE `about`
   ADD CONSTRAINT `about_ibfk_1` FOREIGN KEY (`id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Các ràng buộc cho bảng `admin`
+--
+ALTER TABLE `admin`
+  ADD CONSTRAINT `admin_ibfk_1` FOREIGN KEY (`id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Các ràng buộc cho bảng `education`
 --
 ALTER TABLE `education`
@@ -251,6 +309,12 @@ ALTER TABLE `experience`
 --
 ALTER TABLE `home`
   ADD CONSTRAINT `home_ibfk_1` FOREIGN KEY (`id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Các ràng buộc cho bảng `resume`
+--
+ALTER TABLE `resume`
+  ADD CONSTRAINT `resume_ibfk_1` FOREIGN KEY (`id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Các ràng buộc cho bảng `skills`

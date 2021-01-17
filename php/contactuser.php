@@ -29,10 +29,6 @@
         <?php     session_start();
 
         include("headeruser.php");
-                    //   echo 'id : ' . $_SESSION['name'];
-                    // $_SESSION['name'] =  $row['id'];
-
-        
         ?>
       <!-- </div> -->
     </div>

@@ -39,18 +39,16 @@
             <div class="col-lg-7">
               <div class="container">
                 <h2>Contact me</h2>
-                <form action="/action_page.php" class="d-flex flex-column justify-content-center ml-3">
-                  <!-- <label for="fname">Name</label> -->
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
+                <form action="sendmail.php" class="d-flex flex-column justify-content-center ml-3" method="post">
+                  <input type="text" id="fname" name="name" placeholder="Your name..">
                   <!-- <label for="lname">Email</label> -->
-                  <input type="text" id="lname" name="lastname" placeholder="Your Email..">
+                  <input type="text" name="email" placeholder="Your Email..">
                   <!-- <label for="lname">Phone</label> -->
-                  <input type="text" id="lname" name="lastname" placeholder="Your phone number..">
+                  <input type="text" name="phone" placeholder="Your phone number..">
                   <!-- <label for="subject">Send</label> -->
                   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-                  <input type="submit" value="Send">
+                  <button class="btn btn-success" type="submit" value="Send" name="submit">Send</button>
+                  <!-- <button type="button" class="btn btn-success">Success</button> -->
                 </form>
               </div>
             </div>
@@ -64,7 +62,7 @@
                   <div class=" col-xs-6 col-sm-6 col-lg-6 ">
                     <div class="image "><img src="../image/minh.jpg" alt="" class="img1"></div>
                     <div class="img2 ">
-                      <a href=""><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100014739513664"><i class="fab fa-facebook"></i></a>
                       <a href=""><i class="fab fa-facebook-messenger"></i></a>
                       <a href=""><i class="fab fa-twitter"></i></a>
                     </div>

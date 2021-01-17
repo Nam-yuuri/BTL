@@ -23,9 +23,6 @@
             <li class="dropdown" ><a class="dropdown-toggle"  data-toggle="dropdown" href="#">Account <i class="fas fa-user-alt" style="font-size:150%;padding-top:5px;"></i><span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> LOG IN</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="login.php"><i class="fas fa-sign-out-alt"></i> LOG OUT</a>
                     </li>
                 </ul>

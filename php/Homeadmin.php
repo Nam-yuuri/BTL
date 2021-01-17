@@ -23,48 +23,30 @@
           $pass='';
           $db_name='cv';
           session_start();
+          $_SESSION['name'] = '0';
 
-        if(isset($_GET['id'])){
-          $id = $_GET['id'];
-      }
-      $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
-      if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-      }
-          $sql="select * from home where id = ".$id;
-              if($result = mysqli_query($conn, $sql)){
-                  if(mysqli_num_rows($result) > 0){
-                      $row = mysqli_fetch_array($result);
+      
+          $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
+          if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+          }
+              $sql="select * from admin ";
+                  if($result = mysqli_query($conn, $sql)){
+                      if(mysqli_num_rows($result) > 0){
+                          $row = mysqli_fetch_array($result);
+                      }
                   }
-              }
-      if(isset($_POST['submit'])){
-          $id = $_POST['id'];
-          $nam = $_POST['name'];
-          $int = $_POST['introduce'];
-          $dis = $_POST['skill'];
-          // $sqln = "update about set id = '".$id."', image='".$ima."', introduce ='".$int."', name ='".$nam."', birthday ='".$bir."', phone ='".$pho."', address ='".$add."',
-          // mail ='".$mai."', degree ='".$deg."', branch ='".$bra."', short-term goal ='".$sho."', distant target ='".$dis."'  where id = ".$id;
-          // if(mysqli_query($conn,$sqln)){
-          //     header("location:aboutme.php");
-          // }
-          // echo 'fghfg : ' . $_POST['image'];
-
-      }
-          // Lưu Session
-    // echo 'id : ' . $row['id'];
-    $_SESSION['name'] =  $row['id'];
-    // echo 'id : ' . $_SESSION['name'];
-    include("headeradmin.php");
-
+              // Lưu Session
+        include("headeradmin.php");
+                
       ?>
 
 <div class="container d-flex justify-content-center">
-
 <div class="row d-flex justify-content-center">
   <div class="col-lg-12 text-center" style="margin-top:200px">
     <div class="row">
       </div>
-        <h1 ><?php echo $row['name']  ?></h1>
+        <h1 ><?php echo $row['teamname']  ?></h1>
       </div>
     <!-- </div> -->
     <div class="row">
