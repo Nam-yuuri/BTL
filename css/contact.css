@@ -105,10 +105,10 @@ h2 {
     padding: 10px;
 }
 
-.btn_submit {
+.button {
     display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
+    padding: 10px 20px;
+    font-size: 20px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -121,11 +121,11 @@ h2 {
     box-shadow: 0 9px #999;
 }
 
-.btn_submit:hover {
+.button:hover {
     background-color: #3e8e41
 }
 
-.btn_submit:active {
+.button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 17, 2021 lúc 07:41 AM
--- Phiên bản máy phục vụ: 10.4.14-MariaDB
--- Phiên bản PHP: 7.2.34
+-- Thời gian đã tạo: Th1 17, 2021 lúc 02:13 PM
+-- Phiên bản máy phục vụ: 10.4.16-MariaDB
+-- Phiên bản PHP: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,15 +38,15 @@ CREATE TABLE `about` (
   `mail` char(50) COLLATE utf8mb4_unicode_ci NOT NULL,
   `degree` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `branch` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `short-term goal` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `distant target` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL
+  `short` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `distanttarget` varchar(1000) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `about`
 --
 
-INSERT INTO `about` (`id`, `image`, `introduce`, `name`, `birthday`, `phone`, `address`, `mail`, `degree`, `branch`, `short-term goal`, `distant target`) VALUES
+INSERT INTO `about` (`id`, `image`, `introduce`, `name`, `birthday`, `phone`, `address`, `mail`, `degree`, `branch`, `short`, `distanttarget`) VALUES
 (1, 'nam.jpg', 'myself is a cheerful, sociable, enthusiastic and active person. have experience in team work', 'Hoàng Võ Hoài Nam', '2000-07-25', '0395001595', 'Thanh Hóa', 'hoangvohoainamvtath5@gmail.com', 'student', 'Information Technology', 'Become a trainee and strive to be an employee in the near future. become a programmer', 'I am a student who has just completed the IT majoring program at MBN Academy. I have also passed CCNA certification. With the specialized knowledge I have learned, I want to find a suitable job, which is the position of a network administrator so that I can apply and promote my abilities well. The practical work experience that I have accumulated will be the basis for me to achieve my goal of becoming a good network administrator in the future.'),
 (2, 'minh.jpg', 'myself is a cheerful, sociable, enthusiastic and active person. ', 'Đào Nhật Minh', '2000-04-13', '0913903597', 'Hà Nam', 'daonhatminhwru2000@gmail.com', 'studen', 'Information Technology', 'Become a trainee and strive to be an employee in the near future. become a programmer', 'I am a student who has just completed the IT majoring program at MBN Academy. I have also passed CCNA certification. With the specialized knowledge I have learned, I want to find a suitable job, which is the position of a network administrator so that I can apply and promote my abilities well. The practical work experience that I have accumulated will be the basis for me to achieve my goal of becoming a good network administrator in the future.');
 
@@ -97,7 +97,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `teamname`, `introduce`, `skill`, `image1`, `image2`, `name1`, `name2`, `achievement`, `short`, `distanttarget`) VALUES
-(0, 'TEAM 181', 'We are Professional', 'Web Design,Graphic Design, Photoshop, Illustrator', 'nam.jpg', 'minh.jpg', 'Hoàng Võ Hoài Nam', 'Đào Nhật Minh', 'won consolation prize in a student game programming competition.each participated in technology competitions and seminars nationwide', 'Successfully complete team projects and learn new languages', 'join more larger projects and complete projects that prepare them to participate. participate in technology conferences and competitions so that more people get to know the group.');
+(0, 'TEAM 18', 'We are Professional', 'Web Design,Graphic Design, Photoshop, Illustrator', 'nam.jpg', 'minh.jpg', 'Hoàng Võ Hoài Nam', 'Đào Nhật Minh', 'won consolation prize in a student game programming competition.each participated in technology competitions and seminars nationwide', 'Successfully complete team projects and learn new languages', 'join more larger projects and complete projects that prepare them to participate. participate in technology conferences and competitions so that more people get to know the group.');
 
 -- --------------------------------------------------------
 
@@ -208,6 +208,60 @@ INSERT INTO `skills` (`id`, `skill`, `level`) VALUES
 (2, 'Photoshop', 90),
 (2, 'Illustrator', 50);
 
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `testimonials`
+--
+
+CREATE TABLE `testimonials` (
+  `id` int(11) NOT NULL,
+  `content` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `testimonials`
+--
+
+INSERT INTO `testimonials` (`id`, `content`, `image`, `name`) VALUES
+(1, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.\r\n\r\n', 'avatar.jpg', 'Tùng'),
+(1, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.\r\n\r\n', 'avatar.jpg', 'Tùng'),
+(1, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.', 'avatar.jpg', 'Tùng'),
+(2, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.', 'avatar.jpg', 'Tùng'),
+(0, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.', 'avatar.jpg', 'Tùng'),
+(2, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.', 'avatar.jpg', 'Tùng'),
+(0, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.', 'avatar.jpg', 'Tùng'),
+(2, 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus adipisci et delectus ex nisi, deleniti aliquid dignissimos nesciunt aspernatur saepe obcaecati repudiandae minima repellat harum doloribus vel nam corporis fugiat.\r\n\r\n', 'avatar.jpg', 'Tùng');
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `work`
+--
+
+CREATE TABLE `work` (
+  `id` int(11) NOT NULL,
+  `image` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `work`
+--
+
+INSERT INTO `work` (`id`, `image`, `name`, `content`) VALUES
+(1, 'webdesign.png', 'Web Design', 'The most modern and high-quality design made at a professional level.'),
+(1, 'webdevelopment.png', 'Web Development', 'High-quality development of sites at the professional level.'),
+(1, 'mobileapps.png', 'Mobile Apps', 'Professional development of applications for iOS and Android'),
+(1, 'photography.png', 'Photography\r\n', 'I make high-quality photos of any category at a professional level.'),
+(2, 'webdesign.png', 'Web Design', 'The most modern and high-quality design made at a professional level.'),
+(2, 'webdevelopment.png', 'Web Development', 'High-quality development of sites at the professional level.\r\n'),
+(2, 'mobileapps.png', 'Mobile Apps', 'Professional development of applications for iOS and Android'),
+(2, 'photography.png', 'Photography', 'I make high-quality photos of any category at a professional level.');
+
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -258,6 +312,18 @@ ALTER TABLE `resume`
 -- Chỉ mục cho bảng `skills`
 --
 ALTER TABLE `skills`
+  ADD KEY `id` (`id`);
+
+--
+-- Chỉ mục cho bảng `testimonials`
+--
+ALTER TABLE `testimonials`
+  ADD KEY `id` (`id`);
+
+--
+-- Chỉ mục cho bảng `work`
+--
+ALTER TABLE `work`
   ADD KEY `id` (`id`);
 
 --
@@ -321,6 +387,18 @@ ALTER TABLE `resume`
 --
 ALTER TABLE `skills`
   ADD CONSTRAINT `skills_ibfk_1` FOREIGN KEY (`id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Các ràng buộc cho bảng `testimonials`
+--
+ALTER TABLE `testimonials`
+  ADD CONSTRAINT `testimonials_ibfk_1` FOREIGN KEY (`id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Các ràng buộc cho bảng `work`
+--
+ALTER TABLE `work`
+  ADD CONSTRAINT `work_ibfk_1` FOREIGN KEY (`id`) REFERENCES `account` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

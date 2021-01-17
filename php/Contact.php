@@ -46,8 +46,8 @@
                   <!-- <label for="lname">Phone</label> -->
                   <input type="text" name="phone" placeholder="Your phone number..">
                   <!-- <label for="subject">Send</label> -->
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                  <button class="btn btn-success" type="submit" value="Send" name="submit">Send</button>
+                  <textarea id="msg" name="msg" placeholder="Write something.." style="height:200px"></textarea>
+                  <button class="button" type="submit" value="Send" name="submit">Send</button>
                   <!-- <button type="button" class="btn btn-success">Success</button> -->
                 </form>
               </div>
@@ -60,19 +60,19 @@
 
                 <div class="row fb">
                   <div class=" col-xs-6 col-sm-6 col-lg-6 ">
-                    <div class="image "><img src="../image/minh.jpg" alt="" class="img1"></div>
+                    <div class="image "><img src="../image/nam.jpg" alt="" class="img1"></div>
                     <div class="img2 ">
-                      <a href="https://www.facebook.com/profile.php?id=100014739513664"><i class="fab fa-facebook"></i></a>
-                      <a href=""><i class="fab fa-facebook-messenger"></i></a>
-                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.facebook.com/hoilam.chi.735/"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/hoangvohoainam/"><i class="fab fa-instagram"></i></a>
+                      <a href="https://github.com/Nam-yuuri"><i class="fab fa-github"></i></a>
                     </div>
                   </div>
                   <div class="col-xs-6 col-sm-6 col-lg-6 ">
                     <div class="image "><img src="../image/minh.jpg" alt="" class="img1"></div>
                     <div class="img2 ">
-                      <a href=""><i class="fab fa-facebook"></i></a>
-                      <a href=""><i class="fab fa-facebook-messenger"></i></a>
-                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.facebook.com/profile.php?id=100014739513664"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/dn_min1304/"><i class="fab fa-instagram"></i></a>
+                      <a href="https://github.com/hnimnd1304"><i class="fab fa-github"></i></a>
                     </div>
                   </div>
                 </div>

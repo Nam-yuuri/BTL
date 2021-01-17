@@ -125,13 +125,13 @@
             <li>
               <h3>Short-term goal: </h3>
               <p>
-                <?php echo $row['short-term goal']  ?>
+                <?php echo $row['short']  ?>
               </p>
             </li>
             <li>
               <h3>Distant target: </h3>
               <p>
-                <?php echo $row['distant target']  ?>
+                <?php echo $row['distanttarget']  ?>
               </p>
             </li>
           </ul>

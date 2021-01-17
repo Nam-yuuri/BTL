@@ -1,5 +1,5 @@
 <?php 
-    $conn = mysqli_connect("localhost","root","","btl");
+    $conn = mysqli_connect("localhost","root","","cv");
     if(!$conn){
         die("Connection Failed" . mysqli_connect_error());
     }
