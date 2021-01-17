@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>CV</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   </head>
   <style>
+  .account{
+    background-color:rgb(121, 121, 121);
+    color: white;
+}
+
     h1{
         text-align: center;
     }
@@ -27,13 +32,13 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql="select * from account";
+    $sql="select * from account where id>0";
             if($result = mysqli_query($conn, $sql)){
                 if(mysqli_num_rows($result) > 0){
                 
     ?>
 <body class="">
-    <?php include("headeradmin.php"); ?>
+    <?php include("headeruser.php"); ?>
     <div class="container ">
     <h1>ACCOUNT</h1>
     <hr>

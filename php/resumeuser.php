@@ -21,7 +21,7 @@
 </style>
 
 <body>
-	<?php include("header.php");
+	<?php 
 	          $host='localhost';
 			  $uer='root';
 			  $pass='';
@@ -36,9 +36,14 @@
 			  $sql="select * from education where id = ".$id;
 				  if($result = mysqli_query($conn, $sql)){
 					  if(mysqli_num_rows($result) > 0){
+						$post=mysqli_fetch_array($result)
 		  ?>
 
+<?php 
+    $_SESSION['name'] =  $post['id'];
 
+include("headeruser.php"); 
+?>
 	<div class="container-fluid"
 		style="background:url(https://c1.wallpaperflare.com/preview/427/745/192/notebook-natural-laptop-macbook.jpg) no-repeat center  center; background-size:cover;height:100%">
 		<div class="container">

@@ -54,20 +54,6 @@
                       $row = mysqli_fetch_array($result);
                   }
               }
-      if(isset($_POST['submit'])){
-          $id = $_POST['id'];
-          $ima = $_POST['image'];
-          $int = $_POST['introduce'];
-          $nam = $_POST['name'];
-          $bir = $_POST['birthday'];
-          $pho = $_POST['phone'];
-          $add = $_POST['address'];
-          $mai = $_POST['mail'];
-          $deg = $_POST['degree'];
-          $bra = $_POST['branch'];
-          $sho = $_POST['short-term goal'];
-          $dis = $_POST['distant target'];
-      }
       ?>
 
   <div class="container ">
@@ -144,13 +130,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div id="box">
-
-
-
-        </div> -->
-
   </div>
 
       </div>
