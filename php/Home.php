@@ -1,6 +1,3 @@
-<!doctype html>
-<html lang="en">
-
 <head>
   <title>CV</title>
   <!-- Required meta tags -->
@@ -18,36 +15,59 @@
   <link rel="stylesheet" href="../css/home.css">
 </head>
 <body style="background:url(https://images.wallpaperscraft.com/image/keyboard_telephone_desktop_179668_3840x2160.jpg) no-repeat center  center; background-size:cover;height:100vh;">
-  <?php include("header.php");?>
-  <div class="container d-flex justify-content-center">
+<body>
+  <?php       
 
-    <div class="row d-flex justify-content-center">
-      <div class="col-lg-12 text-center" style="margin-top:200px">
-        <div class="row">
-          </div>
-            <h1 >TEAM 18</h1>
-          </div>
-        <!-- </div> -->
-        <div class="row">
-          <div id="main-page ">
-            <section id="home" class="call-white-text text-dark">
-              <div class="main-wrapper">
-                <p class="cd-headline clip is-full-width">
-                  <span>We are Professional</span> <span class="typer" data-colors="rgb(0, 0, 0);" id="main"
-                    data-words="Game design,Software engineer, web programming, Photograper" data-delay="100"
-                    data-deletedelay="1000" style="color: rgb(0, 0, 0);"> </span>
-                </p>
-              </div> <!-- /.main-wrapper -->
-            </section>
-          </div>
-        </div>
+          $host='localhost';
+          $uer='root';
+          $pass='';
+          $db_name='cv';
+          session_start();
+
+      
+          $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
+          if ($conn->connect_error) {
+              die("Connection failed: " . $conn->connect_error);
+          }
+              $sql="select * from admin ";
+                  if($result = mysqli_query($conn, $sql)){
+                      if(mysqli_num_rows($result) > 0){
+                          $row = mysqli_fetch_array($result);
+                      }
+                  }
+              // Lưu Session
+        include("header.php");
+                
+      ?>
+
+<div class="container d-flex justify-content-center">
+<div class="row d-flex justify-content-center">
+  <div class="col-lg-12 text-center" style="margin-top:200px">
+    <div class="row">
       </div>
-    </div>
-    <div class="row ">
-      <div class="col-lg-12 d-flex justify-content-center">
-        <a href="#"><button type="button" class="btn btn-outline-success mr-5">CREATE CV</button></a>
-        <a href="login.php"><button type="button" class="btn btn-outline-success ">REGISTRANTION</button></a>
+        <h1 ><?php echo $row['teamname']  ?></h1>
+      </div>
+    <!-- </div> -->
+    <div class="row">
+      <div id="main-page ">
+        <section id="home" class="call-white-text text-dark">
+          <div class="main-wrapper">
+            <p class="cd-headline clip is-full-width">
+              <span><?php echo $row['introduce']  ?></span> <span class="typer" data-colors="rgb(0, 0, 0);" id="main"
+                data-words="<?php echo $row['skill']  ?>" data-delay="100"
+                data-deletedelay="1000" style="color: rgb(0, 0, 0);"> </span>
+            </p>
+          </div> <!-- /.main-wrapper -->
+        </section>
       </div>
     </div>
   </div>
-  <?php include("footer.php");?>
+</div>
+<div class="row ">
+  <div class="col-lg-12 d-flex justify-content-center">
+    <a href="#"><button type="button" class="btn btn-outline-success mr-5">CREATE CV</button></a>
+    <a href="login.php"><button type="button" class="btn btn-outline-success ">REGISTRANTION</button></a>
+  </div>
+</div>
+</div>
+<?php include("footer.php");?>

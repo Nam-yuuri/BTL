@@ -26,15 +26,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> LOG IN</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php"><i class="fas fa-sign-out-alt"></i> LOG OUT</a>
-                    </li>
                 </ul>
             </li>
         </ul>   
         <li class="nav-item">
-            <p></p>
+            <!-- <a class="nav-link account" href="accountadmin.php">ACCOUNT</a> -->
         </li>
+
         </ul>
     </div>
     </nav>    <!-- Optional JavaScript -->

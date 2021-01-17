@@ -47,7 +47,8 @@
                   <input type="text" name="phone" placeholder="Your phone number..">
                   <!-- <label for="subject">Send</label> -->
                   <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                  <button class="btn_submit" type="submit" value="Send" name="submit">Send</button>
+                  <button class="btn btn-success" type="submit" value="Send" name="submit">Send</button>
+                  <!-- <button type="button" class="btn btn-success">Success</button> -->
                 </form>
               </div>
             </div>

@@ -32,10 +32,23 @@
 
 <body     style="background:url(https://c1.wallpaperflare.com/preview/830/150/561/sackcloth-sackcloth-textured-laptop-ipad.jpg) no-repeat center  center; background-size:cover">
 
-  <?php include("header.php");
-    
-            
-    ?>
+<?php       
+
+      $host='localhost';
+      $uer='root';
+      $pass='';
+      $db_name='cv';
+      session_start();
+
+      $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
+      if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+      }
+      // Lưu Session
+      include("header.php");
+
+?>
+
 
 
   <div class="container-fluid"
@@ -49,12 +62,20 @@
 
         <div class="row">
           <div class="col-lg-6 ">
+          <?php 
+                  $sql="select * from admin";
+                  if($result = mysqli_query($conn, $sql)){
+                      if(mysqli_num_rows($result) > 0){
+                          $row = mysqli_fetch_array($result);
+                      }
+                  }
+          ?>
             <div class="row d-flex justify-content-center" style="height:270px">
-              <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
-                <img src="../image/nam.jpg" style="margin-bottom:30px" alt=""></a>
+              <a href="../image/<?php echo $row['image1']  ?>"><span class="glyphicon glyphicon-log-in"></span>
+                <img src="../image/<?php echo $row['image1']  ?>" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
             </div>
             <div class="row d-flex justify-content-center">
-              <h3>Hoàng Võ Hoài Nam</h3>
+              <h3><?php echo $row['name1']  ?></h3>
             </div>
             <div class="row d-flex justify-content-center">
               <a href="aboutnam.php?id=1"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
@@ -63,11 +84,11 @@
           </div>
           <div class="col-lg-6 ">
             <div class="row d-flex justify-content-center" style="height:270px">
-              <a href="../image/minh.jpg"><span class="glyphicon glyphicon-log-in"></span>
-                <img src="../image/minh.jpg" style="margin-bottom:30px" alt=""></a>
+              <a href="../image/<?php echo $row['image2']  ?>"><span class="glyphicon glyphicon-log-in"></span>
+                <img src="../image/<?php echo $row['image2']  ?>" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
             </div>
             <div class="row d-flex justify-content-center">
-              <h3>Đào Nhật Minh</h3>
+              <h3><?php echo $row['name2']  ?></h3>
             </div>
             <div class="row d-flex justify-content-center">
               <a href="aboutminh.php?id=2"><button type="button" style="margin-top:20px" class="btn btn-outline-info">
@@ -78,12 +99,7 @@
         <div class="col-lg-12">
           <h2>ACHIEVEMENT</h2>
           <ul class="list">
-            <li>
-              <p>won consolation prize in a student game programming competition</p>
-            </li>
-            <li>
-              <p>each participated in technology competitions and seminars nationwide</p>
-            </li>
+            <li><p><?php echo $row['achievement']  ?></p></li>
           </ul>
         </div>
         <div class="row pl-3">
@@ -92,19 +108,13 @@
             <ul>
               <h3>Short-term goal: </h3>
               <li>
-                <p>Successfully complete team projects and learn new languages</p>
+                <p><?php echo $row['short-term goal']  ?></p>
               </li>
 
 
               <h3>Distant target: </h3>
               <li>
-                <p>join more larger projects and complete projects that prepare them to participate.</p>
-              </li>
-              <li>
-                <p>participate in technology conferences and competitions so that more people get to know the group.</p>
-              </li>
-              <li>
-                <p>recruit more members to the group</p>
+                <p><?php echo $row['distant target']  ?></p>
               </li>
             </ul>
           </div>

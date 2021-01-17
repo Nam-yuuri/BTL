@@ -21,7 +21,7 @@
           $host='localhost';
           $uer='root';
           $pass='';
-          $db_name='btl';
+          $db_name='cv';
           session_start();
 
         if(isset($_GET['id'])){
@@ -42,12 +42,6 @@
           $nam = $_POST['name'];
           $int = $_POST['introduce'];
           $dis = $_POST['skill'];
-          // $sqln = "update about set id = '".$id."', image='".$ima."', introduce ='".$int."', name ='".$nam."', birthday ='".$bir."', phone ='".$pho."', address ='".$add."',
-          // mail ='".$mai."', degree ='".$deg."', branch ='".$bra."', short-term goal ='".$sho."', distant target ='".$dis."'  where id = ".$id;
-          // if(mysqli_query($conn,$sqln)){
-          //     header("location:aboutme.php");
-          // }
-          // echo 'fghfg : ' . $_POST['image'];
 
       }
           // Lưu Session

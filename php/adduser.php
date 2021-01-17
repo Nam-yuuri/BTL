@@ -17,7 +17,7 @@
     $host='localhost';
     $uer='root';
     $pass='';
-    $db_name='btl';
+    $db_name='cv';
     // Create connection
     $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
     if ($conn->connect_error) {
@@ -38,11 +38,11 @@
                     $pas = $_POST['password'];
                     $sqln = "insert into account values ('".$id."','".$ima."','".$acc."','".$pas."'); ";
                     if(mysqli_query($conn,$sqln)){
-                        header("location:login.php");
+                        header("location:accountadmin.php");
                     }else{header("location:Aboutme.php?temp=1");}
                 }
             }else{header("location:work.php?temp=1");}
-        }else{header("location:resume.php?temp=1");}
+        }else{header("location:accountadmin.php?temp=1");}
     }
     ?>
     <style>
@@ -69,19 +69,19 @@
                 <thead>
                     <tr class="ok">
                         <th class="th_titl" style="width: 124px;">ID</th>
-                        <th><input type="text" name ="VEHICLE_ID" style="width: 508px;" ></th>
+                        <th><input type="text" name ="id" style="width: 508px;" ></th>
                     </tr>
                     <tr class="ok">
                         <th class="th_titl" style="width: 124px;">IMAGE</th>
-                        <th><input type="text" name ="LICENSE_NO" style="width: 508px;" ></th>
+                        <th><input type="text" name ="image" style="width: 508px;" ></th>
                     </tr>
                     <tr class="th_titl" class="ok">
                         <th style="width: 124px;">ACCOUNT</th>
-                        <th><input type="text" name ="MODEL" style="width: 508px;" ></th>
+                        <th><input type="text" name ="account" style="width: 508px;" ></th>
                     </tr>
                     <tr class="th_titl" class="ok">
                         <th style="width: 124px;">PASSWORD</th>
-                        <th><input type="text" name ="YEAR" style="width: 508px;" ></th>
+                        <th><input type="text" name ="password" style="width: 508px;" ></th>
                     </tr>
                 </thead>
             </table>

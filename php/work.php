@@ -16,7 +16,25 @@
 </head>
 
 <?php 
-include("header.php");?>
+    include("header.php");
+    $host='localhost';
+    $uer='root';
+    $pass='';
+    $db_name='cv';
+    session_start();
+    $conn=mysqli_connect($host,$uer,$pass,$db_name);// Check connection
+    if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql="select * from admin";
+    if($result = mysqli_query($conn, $sql)){
+      if(mysqli_num_rows($result) > 0){
+      $row = mysqli_fetch_array($result);
+      }
+    }
+
+?>
 
 <body style="background:url(https://c1.wallpaperflare.com/preview/248/992/890/business-business-meeting-coffee-conference-room.jpg) no-repeat center  center; background-size:cover;height:100vh">
 
@@ -27,12 +45,12 @@ include("header.php");?>
                 <div class="row" >
                   <div class="col-sm-6" > <a href="../image/nam.jpg"><span
                     class="glyphicon glyphicon-log-in"></span><img src="../image/nam.jpg" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
-                    <h3>Hoàng Võ Hoài Nam</h3>
+                    <h3><?php echo $row['name1']  ?></h3>
                     <a href="worknam.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">research</button></a>
                   </div>
                   <div class="col-sm-6" > <a href="../image/minh.jpg"><span
                     class="glyphicon glyphicon-user"></span><img src="../image/minh.jpg" style="margin-bottom:30px;width:206px;height:206px" alt=""></a>
-                    <h3>Đào Nhật Minh</h3>
+                    <h3><?php echo $row['name2']  ?></h3>
                     <a href="workminh.php"><button type="button" style="margin-top:30px" class="btn btn-outline-info">research</button></a>
                   </div>                    
                 </div>
