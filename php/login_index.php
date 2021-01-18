@@ -10,6 +10,8 @@
 "></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js
 "></script>
+<link href="../image/favicon.ico" rel="icon" type="image/x-icon" />
+
   <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}

@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.testimonials img {
+    width: 70px;
+}
+
 .col-md-4 {
     margin-top: 1rem;
 }
@@ -28,27 +32,18 @@
     position: absolute;
     z-index: 1;
 }
-
-.work {
-    background-color: rgb(121, 121, 121);
+.work{
+    background-color:rgb(121, 121, 121);
     color: white;
-}
 
+}
 .col-sm-6 img {
     border-radius: 50%;
-}
-
+}    
 .col-sm-6 {
     margin-top: 100px;
 }
 
 .target {
     text-align: center;
-}
-
-.testimonials img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
 }

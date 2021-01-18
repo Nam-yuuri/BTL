@@ -69,7 +69,8 @@
                             <td><?php echo $post['password'] ?></td>
                             <td></td>
                             <td></td>
-                           
+                            <td><button type="button" class="btn btn-link"><a href="update.php?id1='<?php echo $post['id'] ?>'" title='Update Record' data-toggle='tooltip'><i class="fas fa-edit"></i>UPDATE</a></button></td>
+                        </tr>
                     <?php
                     }
                     ?>
@@ -88,8 +89,8 @@
                             <td><?php echo $post['password'] ?></td>
                             <td><button type="button" class="btn btn-link"><a href="Homeuser.php?id='<?php  echo $post['id']?>'"  title='Update Record' data-toggle='tooltip'><i class="fas fa-eye"></i>VIEW</a></button></td>
                             <td><button type="button" class="btn btn-link"><a href="delete.php?id='<?php echo $post['id'] ?>'" title='Update Record' data-toggle='tooltip'><i class="fas fa-trash-alt"></i>DELETE</a></button></td>
-                            <td><button type="button" class="btn btn-link"><a href="updateuser.php?id1='<?php echo $post['id'] ?>'" title='Update Record' data-toggle='tooltip'><i class="fas fa-edit"></i>UPDATE</a></button></td>
-                        </tr></tr>
+                            <td></td>
+                        </tr>
                     <?php
                     }
                     ?>

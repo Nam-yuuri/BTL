@@ -1,132 +1,80 @@
-*:focus {
-    outline: 0 !important;
-}
-
-.contact {
-    background-color: rgb(121, 121, 121);
+.contact{
+    background-color:rgb(121, 121, 121);
     color: white;
 }
-
-.col-sm-6 img {
+.col-sm-6 img{
     border-radius: 50%;
     height: 100%;
 }
-
-.col-sm-6 h3 {
-    color: white;
+.col-sm-6 h3{
+    color:white;
 }
-
-
 /* .col-sm-6{
     margin-top: 100px;
 } */
-
-.contact {
+.contact{
     text-align: center;
 }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
 input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
-
-h2 {
-    text-align: center;
+h2{
+  text-align:center;
 }
-
-
 /* .img{
     position: relative;
     
     top: 5%;
 } */
-
-.fb i,
-.fa-instagram-square {
+.fb i,.fa-instagram-square{
     color: rgb(16, 16, 241);
 }
-
-.fb {
+.fb{
     text-align: center;
     margin-top: 30px;
 }
-
-.img1 {
+.img1{
     position: relative;
     /* left: 5%; */
     width: 35px;
     border-radius: 50%;
 }
-
-.img2 i {
+.img2 i{
     margin-top: 20px;
 }
-
-.col-lg-6 .fab {
+.col-lg-6 .fab{
     font-size: 100%;
     background-color: white;
     border-radius: 50%;
     border: 1px solid grey;
     padding: 10px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-.button:hover {
-    background-color: #3e8e41
-}
-
-.button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
 }
